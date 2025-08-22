@@ -1,0 +1,72 @@
+.beltWrapper {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #2a3350;
+  background: #0c132b;
+  border-radius: 14px;
+  height: 96px;
+}
+
+.beltBg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 25%, rgba(0, 0, 0, 0) 25%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 40px 2px, 40px 6px;
+  background-repeat: repeat-x;
+  background-position: 0% 40%, 0% 70%;
+  animation: beltMove 1.2s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes beltMove {
+  0% {
+    background-position: 0% 40%, 0% 70%;
+  }
+
+  100% {
+    background-position: 100% 40%, 100% 70%;
+  }
+}
+
+.trackViewport {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 8px;
+}
+
+.tape {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.beltDraggable {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 96px;
+  height: 42px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid #2a3350;
+  background: #10183a;
+  font-weight: 700;
+  user-select: none;
+  cursor: grab;
+}
+
+.beltDraggable:active {
+  cursor: grabbing;
+}
+
+.beltDraggable:focus {
+  outline: 2px solid #4f86ff;
+  outline-offset: 2px;
+}
