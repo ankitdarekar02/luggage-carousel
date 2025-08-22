@@ -11,7 +11,8 @@ describe('Basic UI', () => {
     const bag = await screen.findByTestId('bag-1')
     const storagePanel = screen.getByTestId('storage-panel')
     const firstRow = storagePanel.querySelectorAll('.row')[0]
-    const firstSlot = firstRow.querySelectorAll('.slot')[0]
+    // const firstSlot = firstRow.querySelectorAll('.slot')[0]
+    const firstSlot = firstRow.querySelectorAll('.slot')[0] as HTMLElement
 
     const dt = createDataTransfer()
     fireEvent.dragStart(bag, { dataTransfer: dt })

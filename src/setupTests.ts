@@ -1,4 +1,4 @@
-
+/// <reference types="vitest/globals" />
 import '@testing-library/jest-dom'
 
 if (!(globalThis as any).__BASIC_SETUP__) {
@@ -16,5 +16,5 @@ if (!(globalThis as any).__BASIC_SETUP__) {
     unobserve() {}
     disconnect() {}
   }
-  ;(global as any).ResizeObserver = ResizeObserverMock as any
+  ;(globalThis as any).ResizeObserver = ResizeObserverMock as any
 }
