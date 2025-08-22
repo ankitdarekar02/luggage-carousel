@@ -23,6 +23,21 @@ It includes a moving conveyor belt with bags that can be dragged into storage sl
 
 ---
 
+## 🎥 Demo
+Here are a couple of short clips showing the key functionality of the luggage carousel app.
+
+### 🛄 Unload demo
+Shows dragging bags from the conveyor into storage slots, then unloading them into the Unloaded section.
+![Unload Demo](./src/assets/unload.gif)
+
+### ⏩ Speed change & Clear demo
+Shows adjusting the conveyor belt speed with the slider, clearing all stored luggage with smooth animations, and finally using reset.
+![Speed Change and Clear Demo](./src/assets/clear_and_speed_change.gif)
+
+👉 You can also try the live version here: [luggage-carousel on Vercel](https://luggage-carousel.vercel.app/)
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
